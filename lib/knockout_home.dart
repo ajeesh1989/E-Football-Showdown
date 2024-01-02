@@ -347,7 +347,7 @@ class _KnockoutHomeState extends State<KnockoutHome> {
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 19),
               ],
             ),
           ),
