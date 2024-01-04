@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shared_pre_hive_sampleproject/group_home.dart';
-import 'package:shared_pre_hive_sampleproject/knockout_home.dart';
+import 'package:shared_pre_hive_sampleproject/grouphome/group_home.dart';
+import 'package:shared_pre_hive_sampleproject/knockouthome/knockout_home.dart';
 import 'package:shared_pre_hive_sampleproject/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';

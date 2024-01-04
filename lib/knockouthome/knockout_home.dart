@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:shared_pre_hive_sampleproject/box.dart';
-import 'package:shared_pre_hive_sampleproject/details.dart';
+import 'package:shared_pre_hive_sampleproject/grouphome/groupdetails.dart';
 import 'package:shared_pre_hive_sampleproject/login.dart';
 import 'package:shared_pre_hive_sampleproject/model/task.dart';
 import 'package:shared_preferences/shared_preferences.dart';

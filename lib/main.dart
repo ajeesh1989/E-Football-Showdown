@@ -3,18 +3,23 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:shared_pre_hive_sampleproject/box.dart';
 import 'package:shared_pre_hive_sampleproject/model/task.dart';
 import 'package:shared_pre_hive_sampleproject/model2/task2.dart';
+import 'package:shared_pre_hive_sampleproject/model3/grouphomename.dart';
 import 'package:shared_pre_hive_sampleproject/splash.dart';
 
 void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(TaskAdapter());
-  // task1
   Hive.registerAdapter(Task2Adapter());
-  // task2
+  Hive.registerAdapter(GrouphomenameAdapter());
+
+  // Open the first box
   boxTasks = await Hive.openBox<Task>('TaskBox');
-  // open1
+
+  // Open the second box
   boxTasks2 = await Hive.openBox<Task>('TaskBox2');
-  // open2
+
+  // Open the third box
+  grouphomename = await Hive.openBox<Grouphomename>('TaskBox3');
 
   runApp(const MyApp());
 }

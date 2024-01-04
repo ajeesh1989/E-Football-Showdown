@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:shared_pre_hive_sampleproject/loby.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shared_pre_hive_sampleproject/group_home.dart';
+import 'package:shared_pre_hive_sampleproject/grouphome/group_home.dart';
 import 'package:shared_pre_hive_sampleproject/login.dart';
 
 class SplashPage extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_pre_hive_sampleproject/group_home.dart';
+import 'package:shared_pre_hive_sampleproject/grouphome/group_home.dart';
 import 'package:shared_pre_hive_sampleproject/loby.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

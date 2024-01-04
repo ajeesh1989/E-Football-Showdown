@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:shared_pre_hive_sampleproject/box.dart';
-import 'package:shared_pre_hive_sampleproject/details.dart';
+import 'package:shared_pre_hive_sampleproject/grouphome/groupdetails.dart';
 import 'package:shared_pre_hive_sampleproject/login.dart';
 import 'package:shared_pre_hive_sampleproject/model/task.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -42,95 +42,6 @@ class _GroupHomeState extends State<GroupHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      // drawer: Drawer(
-      //   backgroundColor: Colors.transparent,
-      //   child: Padding(
-      //     padding: const EdgeInsets.only(top: 50.0),
-      //     child: Column(
-      //       mainAxisAlignment: MainAxisAlignment.start,
-      //       children: [
-      //         UserAccountsDrawerHeader(
-      //           accountName: Text(
-      //             ' ${widget.loginName}',
-      //             style: const TextStyle(color: Colors.white),
-      //           ),
-      //           currentAccountPicture: CircleAvatar(
-      //             backgroundColor: Colors.white,
-      //             child: Text(
-      //               widget.loginName[0],
-      //               style: const TextStyle(
-      //                 color: Colors.black,
-      //                 fontWeight: FontWeight.w500,
-      //                 fontSize: 25,
-      //               ),
-      //             ),
-      //           ),
-      //           decoration: const BoxDecoration(
-      //             color: Color.fromARGB(
-      //                 255, 26, 27, 28), // Updated the header color
-      //           ),
-      //           accountEmail: null,
-      //         ),
-      //         ListTile(
-      //           leading: const Icon(Icons.info, color: Colors.white),
-      //           title: const Text(
-      //             'About',
-      //             style: TextStyle(color: Colors.white),
-      //           ),
-      //           onTap: () {
-      //             // Handle 'About' action
-      //           },
-      //         ),
-      //         ListTile(
-      //           leading: const Icon(Icons.home, color: Colors.white),
-      //           title: const Text(
-      //             'Back to App',
-      //             style: TextStyle(color: Colors.white),
-      //           ),
-      //           onTap: () {
-      //             Navigator.of(context).pop();
-      //           },
-      //         ),
-      //         const Divider(color: Colors.white),
-      //         ListTile(
-      //           leading: const Icon(Icons.feedback, color: Colors.white),
-      //           title: const Text(
-      //             'Feedback',
-      //             style: TextStyle(color: Colors.white),
-      //           ),
-      //           onTap: () {
-      //             // Open a feedback screen or modal bottom sheet
-      //             showFeedbackDialog(context);
-      //           },
-      //         ),
-      //         ListTile(
-      //           leading: const Icon(Icons.logout, color: Colors.white),
-      //           title: const Text(
-      //             'Logout',
-      //             style: TextStyle(color: Colors.white),
-      //           ),
-      //           onTap: () {
-      //             LogOut();
-      //           },
-      //         ),
-      //         const Spacer(),
-      //         const Column(
-      //           children: [
-      //             Text(
-      //               'E-Football Showdown',
-      //               style: TextStyle(color: Colors.white),
-      //             ),
-      //             Text(
-      //               'Version: 1.0.0',
-      //               style: TextStyle(color: Colors.white, fontSize: 10),
-      //             ),
-      //           ],
-      //         ),
-      //         const SizedBox(height: 10),
-      //       ],
-      //     ),
-      //   ),
-      // ),
       body: Stack(
         children: [
           Container(
@@ -151,35 +62,6 @@ class _GroupHomeState extends State<GroupHome> {
                   centerTitle: true,
                   backgroundColor: Colors.transparent,
                   title: const Text('Group Style'),
-                  //  Row(
-                  //   children: [
-                  //     IconButton(
-                  //       onPressed: () {
-                  //         _scaffoldKey.currentState?.openDrawer();
-                  //       },
-                  //       icon: const Icon(
-                  //         Icons.menu,
-                  //         color: Colors.black,
-                  //       ),
-                  //     ),
-                  //     Text(
-                  //       'Hello, ${widget.loginName}',
-                  //       style: const TextStyle(
-                  //           fontSize: 20,
-                  //           fontWeight: FontWeight.w400,
-                  //           color: Colors.black),
-                  //     ),
-                  //   ],
-                  // ),
-                  // actions: [
-                  //   IconButton(
-                  //     onPressed: () {
-                  //       LogOut();
-                  //     },
-                  //     icon: const Icon(Icons.logout),
-                  //     color: Colors.white,
-                  //   ),
-                  // ],
                 ),
                 const SizedBox(height: 10),
                 Expanded(
