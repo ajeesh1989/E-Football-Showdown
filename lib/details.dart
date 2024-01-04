@@ -8,7 +8,7 @@ class UniquePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 5,
+      length: 3,
       child: Builder(
         builder: (BuildContext context) {
           return Scaffold(
@@ -17,20 +17,16 @@ class UniquePage extends StatelessWidget {
               title: Text(taskId),
               bottom: const TabBar(
                 tabs: [
-                  Tab(icon: Icon(Icons.sports_soccer)),
                   Tab(icon: Icon(Icons.people)),
                   Tab(icon: Icon(Icons.sports_football)),
-                  Tab(icon: Icon(Icons.timer)),
                   Tab(icon: Icon(Icons.score)),
                 ],
               ),
             ),
             body: TabBarView(
               children: [
-                buildTabContent('Type of Tournament Content'),
                 buildTabContent('Players Content'),
                 buildTabContent('Matches Content'),
-                buildTabContent('Pending Matches Content'),
                 buildTabContent('Scorecard Content'),
               ],
             ),
@@ -82,11 +78,8 @@ class UniquePage extends StatelessWidget {
   void showBottomSheet(BuildContext context) {
     String placeholder = '';
 
-    switch (DefaultTabController.of(context)!.index) {
+    switch (DefaultTabController.of(context).index) {
       case 0:
-        placeholder = 'Enter Tournament Name';
-        break;
-      case 1:
         placeholder = 'Enter Player Names';
         break;
       // Handle other cases for different tabs...
