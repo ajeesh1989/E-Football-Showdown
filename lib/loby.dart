@@ -8,7 +8,7 @@ import 'package:url_launcher/url_launcher.dart';
 class LobbyPage extends StatefulWidget {
   final String loginName;
 
-  LobbyPage({
+  const LobbyPage({
     Key? key,
     required this.loginName,
   }) : super(key: key);
